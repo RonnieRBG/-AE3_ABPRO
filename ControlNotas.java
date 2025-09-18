@@ -6,11 +6,31 @@ import java.util.Scanner;
 public class ControlNotas {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        //int can_estudiantes = 5;
-        //int can_notas = 3; 
-        // Lista de estudiantes, cada uno con su lista de notas
+  
+
+/**
+ * La clase ControlNotas permite gestionar un conjunto de estudiantes y sus notas.
+ * 
+ * Funcionalidades principales:
+ * <ul>
+ *   <li>Ingresar notas</li>
+ *   <li>Modificar notas</li>
+ *   <li>Mostrar promedios</li>
+ *   <li>Eliminar una nota</li>
+ * </ul>
+ * 
+ * El programa funciona mediante un menú de opciones en consola.
+ * 
+ * @author Ronnie
+ */
         ArrayList<ArrayList<Double>> estudiantes = new ArrayList<>();
         int opcion;
+        
+        /**
+         * Establecemos un bucle do-while para manejar el menu de opciones
+         * y que se repita con cada accion de usuario hasta que este decida 
+         * SALIR
+         */
         do {
         	System.out.println("=== MENÚ ===");
         	System.out.println("1) Ingresar notas");
